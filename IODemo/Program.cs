@@ -1,6 +1,6 @@
 ﻿using IO;
 using System;
-
+using System.IO;
 
 namespace IODemo
 {
@@ -37,14 +37,29 @@ namespace IODemo
 
 			// put in a string with a 21-bit unicode value
 			var test = "This is a test \U0010FFEE";
-			var uni = new Utf32Enumerable(test);
-			foreach(var uch in uni)
+			var u32 = new Utf32Enumerable(test);
+			Console.Write("Enum Utf32Enumerable: ");
+			foreach(var uch in u32)
 			{
 				// console will mangle, but 
 				// do it anyway
 				var str = char.ConvertFromUtf32(uch);
 				Console.Write(str);
 			}
+			Console.WriteLine();
+			Console.WriteLine();
+			Console.Write("Enum Utf16Enumerable: ");
+			var u16 = new Utf16Enumerable(u32);
+			foreach (var ch in u16)
+			{
+				Console.Write(ch);
+			}
+			Console.WriteLine();
+			Console.WriteLine();
+
+			var reader = new StringReader("This is a demo of TextReaderEnumerable");
+			foreach (char ch in TextReaderEnumerable.FromReader(reader))
+				Console.Write(ch);
 			Console.WriteLine();
 			Console.WriteLine();
 

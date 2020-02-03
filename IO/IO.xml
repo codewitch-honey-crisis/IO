@@ -97,6 +97,23 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="T:IO.Utf16Enumerable">
+            <summary>
+            Provides a streaming UTF-32 source over a streaming character source
+            </summary>
+        </member>
+        <member name="M:IO.Utf16Enumerable.#ctor(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Constructs a new instance of a UTF-32 enumerator
+            </summary>
+            <param name="input">The input source</param>
+        </member>
+        <member name="M:IO.Utf16Enumerable.GetEnumerator">
+            <summary>
+            Retrieves an enumeration of UTF-32 values
+            </summary>
+            <returns>A new enumerator</returns>
+        </member>
         <member name="T:IO.Utf32Enumerable">
             <summary>
             Provides a streaming UTF-32 source over a streaming character source
