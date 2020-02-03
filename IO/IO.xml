@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IO</name>
+    </assembly>
+    <members>
+        <member name="T:IO.FileReaderEnumerable">
+            <summary>
+            Represents an <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance over a file
+            </summary>
+        </member>
+        <member name="P:IO.FileReaderEnumerable.CanCreateReader">
+            <summary>
+            Indicates whether or not the instance can create a reader
+            </summary>
+        </member>
+        <member name="M:IO.FileReaderEnumerable.#ctor(System.String)">
+            <summary>
+            Constructs a new instance over a file
+            </summary>
+        </member>
+        <member name="M:IO.FileReaderEnumerable.CreateTextReader">
+            <summary>
+            Creates a text reader over a file
+            </summary>
+            <returns>A new text reader</returns>
+        </member>
+        <member name="T:IO.ConsoleReaderEnumerable">
+            <summary>
+            Represents an <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance over stdin
+            </summary>
+        </member>
+        <member name="P:IO.ConsoleReaderEnumerable.CanCreateReader">
+            <summary>
+            Indicates whether or not the instance can create a reader
+            </summary>
+        </member>
+        <member name="M:IO.ConsoleReaderEnumerable.#ctor">
+            <summary>
+            Constructs a new instance over stdin
+            </summary>
+        </member>
+        <member name="M:IO.ConsoleReaderEnumerable.CreateTextReader">
+            <summary>
+            Creates a text reader over stdin
+            </summary>
+            <returns>A new text reader</returns>
+        </member>
+        <member name="T:IO.UrlReaderEnumerable">
+            <summary>
+            Represents an <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance over an URL
+            </summary>
+        </member>
+        <member name="P:IO.UrlReaderEnumerable.CanCreateReader">
+            <summary>
+            Indicates whether or not the instance can create a reader
+            </summary>
+        </member>
+        <member name="M:IO.UrlReaderEnumerable.#ctor(System.String)">
+            <summary>
+            Constructs a new instance over an URL
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:IO.UrlReaderEnumerable.CreateTextReader">
+            <summary>
+            Creates a new <see cref="T:System.IO.TextReader"/> from the URL
+            </summary>
+            <returns>A text reader over the URL</returns>
+        </member>
+        <member name="T:IO.TextReaderEnumerable">
+            <summary>
+            Represents an <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance over a <see cref="T:System.IO.TextReader" />
+            </summary>
+        </member>
+        <member name="M:IO.TextReaderEnumerable.FromReader(System.IO.TextReader)">
+            <summary>
+            Creates a new instance from an existing text reader
+            </summary>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IO.TextReaderEnumerable.GetEnumerator">
+            <summary>
+            Gets the enumerator for this instance
+            </summary>
+            <returns>An enumerator</returns>
+        </member>
+        <member name="P:IO.TextReaderEnumerable.CanCreateReader">
+            <summary>
+            Indicates whether or not the instance is capable of creating a reading
+            </summary>
+        </member>
+        <member name="M:IO.TextReaderEnumerable.CreateTextReader">
+            <summary>
+            Creates the <see cref="T:System.IO.TextReader" /> source for this instance
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IO.Utf32Enumerable">
+            <summary>
+            Provides a streaming UTF-32 source over a streaming character source
+            </summary>
+        </member>
+        <member name="M:IO.Utf32Enumerable.#ctor(System.Collections.Generic.IEnumerable{System.Char})">
+            <summary>
+            Constructs a new instance of a UTF-32 enumerator
+            </summary>
+            <param name="input">The input source</param>
+        </member>
+        <member name="M:IO.Utf32Enumerable.GetEnumerator">
+            <summary>
+            Retrieves an enumeration of UTF-32 values
+            </summary>
+            <returns>A new enumerator</returns>
+        </member>
+    </members>
+</doc>
