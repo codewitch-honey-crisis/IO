@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
 namespace IO
 {
 	/// <summary>
-	/// Provides a streaming UTF-32 source over a streaming character source
+	/// Provides a streaming UTF-16 source over a streaming UTF-32 source
 	/// </summary>
 	public sealed class Utf16Enumerable : IEnumerable<char>
 	{
@@ -23,7 +21,7 @@ namespace IO
 			_input = input;
 		}
 		/// <summary>
-		/// Retrieves an enumeration of UTF-32 values
+		/// Retrieves an enumeration of UTF-16 values
 		/// </summary>
 		/// <returns>A new enumerator</returns>
 		public IEnumerator<char> GetEnumerator()

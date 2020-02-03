@@ -99,7 +99,7 @@
         </member>
         <member name="T:IO.Utf16Enumerable">
             <summary>
-            Provides a streaming UTF-32 source over a streaming character source
+            Provides a streaming UTF-16 source over a streaming UTF-32 source
             </summary>
         </member>
         <member name="M:IO.Utf16Enumerable.#ctor(System.Collections.Generic.IEnumerable{System.Int32})">
@@ -110,7 +110,7 @@
         </member>
         <member name="M:IO.Utf16Enumerable.GetEnumerator">
             <summary>
-            Retrieves an enumeration of UTF-32 values
+            Retrieves an enumeration of UTF-16 values
             </summary>
             <returns>A new enumerator</returns>
         </member>
