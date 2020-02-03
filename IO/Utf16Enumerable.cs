@@ -11,7 +11,7 @@ namespace IO
 	{
 		IEnumerable<int> _input;
 		/// <summary>
-		/// Constructs a new instance of a UTF-32 enumerator
+		/// Constructs a new instance of a UTF-16 enumerator
 		/// </summary>
 		/// <param name="input">The input source</param>
 		public Utf16Enumerable(IEnumerable<int> input)
